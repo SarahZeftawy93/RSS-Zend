@@ -1,0 +1,13 @@
+
+<?php 
+echo "$this->form";
+echo "<br/><br/><table border='1'><tr><th>RSS linkes</th><th>Actions</th></tr>";
+foreach ($this->Rss as $key => $value) {
+
+	echo "<tr><td><a  href='".($value['link'])."'> ".$value['link']." </a></td><td><a href='delete/id/".($value['id'])."'>delete</a> <a href='Rss/edit/id/".($value['id'])."'>Edit</a></td></tr>";
+
+}		
+
+echo "</table>";
+
+?>
